@@ -1,0 +1,208 @@
+<SCRIPT language="JavaScript1.2" id="Sothink Widgets:main.pgt" type="text/javascript">
+<!--
+stm_bm(["uueoehr",400,"","",0,"","",0,0,0,0,0,1,0,0,""],this);
+stm_bp("p0",[0,4,0,0,3,4,0,0,100,"",-2,"",-2,90,0,0,"#FFFFFF","#333333","",3,0,0,"#FFFFFF"]);
+stm_ai("p0i0",[0,"","","",-1,-1,0,"","iframe","","","","",0,0,0,"","",0,0,0,0,1,"#333333",0,"#FFFFCC",0,"","",3,3,0,0,"#fffff7","#FFFFFF","#FFFFFF","#990000","8pt 'Tahoma','Arial'","8pt 'Tahoma','Arial'",0,0]);
+
+
+<%
+if session("classify")="A" then
+%>
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p0i4","p0i0",[0,"基本資料維護","","",-1,-1,0,]);
+stm_bp("p1",[1,4,0,0,2,3,6,0,100,"progid:DXImageTransform.Microsoft.Fade(overlap=.5,enabled=0,Duration=0.43)",-2,"",-2,67,2,3,"#999999","#333333","",3,1,1,"#aca899"]);
+stm_aix("p1i0","p0i0",[0,"老師/小老師名單維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"auth.asp","_self"]);
+stm_aix("p1i0","p0i0",[0,"教師輔導療程班表維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"schedulelist.asp?category=T","_self"]);
+stm_aix("p1i5","p1i0",[0,"小老師班表資料維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"schedulelist.asp?category=ST","_self"]);
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i5","p1i0",[0,"口語級數資料維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"orallevellist.asp","_self"]);
+stm_aix("p1i5","p1i0",[0,"老師特殊專長領域維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"skill.asp","_self"]);
+stm_aix("p1i5","p1i0",[0,"老師語言專長維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"language.asp","_self"]);
+stm_aix("p1i5","p1i0",[0,"補充教材資料維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"learn.asp","_self"]);
+stm_aix("p1i5","p1i0",[0,"自學療程軟體項目維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"software.asp","_self"]);
+stm_aix("p1i5","p1i0",[0,"自學療程項目維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"selflist.asp","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i5","p1i0",[0,"外語學習講座資料維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"lecture.asp?category=L","_self"]);
+stm_aix("p1i5","p1i0",[0,"處方課程維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"lecture.asp?category=C","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i5","p1i0",[0,"系統參數設定&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"parameter.asp","_self"]);
+stm_aix("p1i5","p1i0",[0,"不開放日期維護&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"noopen.asp","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i5","p1i0",[0,"策略剖析定義&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"strategyanalysis.asp","_self"]);
+stm_aix("p1i5","p1i0",[0,"風格剖析定義&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"styleanalysis.asp","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i5","p1i0",[0,"加入學員歷史預約紀錄（老師療程）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"historybook.asp","_self"]);
+stm_aix("p1i5","p1i0",[0,"加入學員歷史預約紀錄（自學軟體）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"historysoftware.asp?category=S","_self"]);
+stm_aix("p1i5","p1i0",[0,"加入學員歷史預約紀錄（補充教材）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"historysoftware.asp?category=T","_self"]);
+
+
+
+stm_ep();
+<%end if%>
+
+
+
+<%
+if (session("questionnaire")="Y" and session("classify") ="S" ) or session("classify")="A" or session("classify")="E"  or session("classify")="B"   then
+%>
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p0i4","p0i0",[0,"學員個人專區","","",-1,-1,0,]);
+stm_bp("p1",[1,4,0,0,2,3,6,0,100,"progid:DXImageTransform.Microsoft.Fade(overlap=.5,enabled=0,Duration=0.43)",-2,"",-2,67,2,3,"#999999","#333333","",3,1,1,"#aca899"]);
+stm_aix("p1i0","p0i0",[0,"個人學習紀錄統計分析&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"recordreport.asp","_self"]);
+stm_aix("p1i0","p0i0",[0,"個人大專英檢成績紀錄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"languagescore.asp?category=L","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+
+stm_aix("p1i0","p0i0",[0,"個人教師輔導療程紀錄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"recordprofile.asp","_self"]);
+stm_aix("p1i0","p0i0",[0,"個人自學軟體療程上課紀錄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"swrecord.asp?category=S","_self"]);
+stm_aix("p1i0","p0i0",[0,"個人補充教材上課紀錄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"swrecord.asp?category=T","_self"]);
+stm_aix("p1i0","p0i0",[0,"個人自學療程上課紀錄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"swrecord.asp?category=F","_self"]);
+stm_aix("p1i0","p0i0",[0,"個人處方課程紀錄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"lecturerecordview.asp?category=C","_self"]);
+stm_aix("p1i0","p0i0",[0,"個人外語學習講座紀錄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"lecturerecordview.asp?category=L","_self"]);
+
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i0","p0i0",[0,"取消個人預約輔導療程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"cancel.asp?category=T","_self"]);
+stm_aix("p1i0","p0i0",[0,"取消個人預約口語小老師輔導療程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"cancel.asp?category=ST","_self"]);
+stm_aix("p1i0","p0i0",[0,"取消個人預約自學軟體療程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"cancelsoftware.asp?category=S","_self"]);
+stm_aix("p1i0","p0i0",[0,"取消個人預約補充教材&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"cancelsoftware.asp?category=T","_self"]);
+stm_aix("p1i0","p0i0",[0,"取消個人預約自學療程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"cancelsoftware.asp?category=F","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i0","p0i0",[0,"取消個人報名外語學習講座&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"cancellecture.asp?category=L","_self"]);
+stm_aix("p1i0","p0i0",[0,"取消個人報名處方課程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"cancellecture.asp?category=C","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i0","p0i0",[0,"個人基本資料(含學習問卷)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"studentedit.asp?sid=<%=session("sid")%>","_self"]);
+stm_aix("p0i12","p0i0",[0,"預約規則","","",-1,-1,0,"showrule.asp","showModalDialog"]);
+stm_ep();
+<%end if%>
+
+<%
+if (session("questionnaire")="Y" and session("classify") ="S" ) or session("classify")="A" or session("classify")="E" or session("classify")="T" or session("classify")="B"      then
+%>
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p0i4","p0i0",[0,"預約/報名作業","","",-1,-1,0,]);
+stm_bp("p1",[1,4,0,0,2,3,6,0,100,"progid:DXImageTransform.Microsoft.Fade(overlap=.5,enabled=0,Duration=0.43)",-2,"",-2,67,2,3,"#999999","#333333","",3,1,1,"#aca899"]);
+stm_aix("p1i0","p0i0",[0,"查詢教師輔導療程班表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"queryteacher.asp","_self"]);
+stm_aix("p1i0","p0i0",[0,"預約教師輔導療程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0," bookteacher.asp","_self"]);
+stm_aix("p1i0","p0i0",[0,"查詢預約教師輔導療程狀況&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booked.asp?category=T","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i0","p0i0",[0,"查詢口語小老師班表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"querysteacher.asp","_self"]);
+stm_aix("p1i0","p0i0",[0,"預約口語小老師輔導療程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booksteacher.asp","_self"]);
+stm_aix("p1i0","p0i0",[0,"查詢口語小老師輔導療程狀況&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booked.asp?category=ST","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i0","p0i0",[0,"預約自學軟體療程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booksoftware.asp?category=S&showflag=1","_self"]);
+stm_aix("p1i0","p0i0",[0,"查詢自學軟體已預約狀況&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booksoftwarelist.asp?category=S","_self"]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i0","p0i0",[0,"預約補充教材&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booksoftware.asp?category=T&showflag=1","_self"]);
+stm_aix("p1i0","p0i0",[0,"查詢補充教材已預約狀況&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booksoftwarelist.asp?category=T","_self"]);
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i0","p0i0",[0,"報名外語學習講座&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booklecture.asp?category=L","_self"]);
+stm_aix("p1i0","p0i0",[0,"查詢已報名外語學習講座學員&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booklecturelist.asp?category=L","_self"]);
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i0","p0i0",[0,"報名處方課程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booklecture.asp?category=C","_self"]);
+stm_aix("p1i0","p0i0",[0,"查詢已報名處方課程學員&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"booklecturelist.asp?category=C","_self"]);
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p1i0","p0i0",[0,"預約自學療程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"bookself.asp?category=F&showflag=1","_self"]);
+stm_aix("p1i0","p0i0",[0,"查詢已預約自學療程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","","",-1,-1,0,"bookselflist.asp?category=F","_self"]);
+
+
+
+stm_ep();
+<%end if%>
+
+<%
+if  session("classify")="A" or session("classify")="E" or session("classify")="T"  or session("classify")="B"    then
+%>
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p0i8","p0i0",[0,"管理者作業","","",-1,-1,0,"#","_self"]);
+stm_bpx("p3","p1",[1,4,0,0,2,3,6,7]);
+
+<%
+if  session("classify")="A" then
+%>
+stm_aix("p3i0","p0i0",[0,"中心學員基本資料維護","","",-1,-1,0,"studentlist.asp?category=S","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員學習紀錄統計分析","","",-1,-1,0,"studentlist.asp?category=R","_self","","","","",6,0,0,"","",7,7]);
+<%end if%>
+<%
+if  session("classify")="A" or  session("classify")="B"then
+%>
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p3i0","p0i0",[0,"教師&nbsp;/&nbsp;小老師療程 簽到作業","","",-1,-1,0,"signin.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"自學軟體&nbsp;/&nbsp;補充教材 簽到作業","","",-1,-1,0,"signinsoftware.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"自學療程  簽到作業","","",-1,-1,0,"signinsoftware.asp?category=F","_self","","","","",6,0,0,"","",7,7]);
+
+stm_aix("p3i0","p0i0",[0,"外語學習講座&nbsp; 簽到作業","","",-1,-1,0,"signinlecture.asp?category=L","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"處方課程&nbsp; 簽到作業","","",-1,-1,0,"signinlecture.asp?category=C","_self","","","","",6,0,0,"","",7,7]);
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+<%end if%>
+stm_aix("p3i0","p0i0",[0,"學員診斷處方籤紀錄維護","","",-1,-1,0,"diagnosis.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員咨商紀錄維護","","",-1,-1,0,"consult.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員口說練習紀錄維護","","",-1,-1,0,"op.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員詩歌饒舌練習紀錄維護","","",-1,-1,0,"crkp.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員寫作紀錄維護","","",-1,-1,0,"write.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員閱讀紀錄維護","","",-1,-1,0,"read.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員簡報練習紀錄維護","","",-1,-1,0,"pp.asp","_self","","","","",6,0,0,"","",7,7]);
+
+<%
+if  session("classify")="A" then
+%>
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p3i0","p0i0",[0,"學員自學軟體紀錄維護","","",-1,-1,0,"softwarerecord.asp?category=S","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員補充教材紀錄維護","","",-1,-1,0,"softwarerecord.asp?category=T","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員自學紀錄維護","","",-1,-1,0,"softwarerecord.asp?category=F","_self","","","","",6,0,0,"","",7,7]);
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p3i0","p0i0",[0,"學員處方課程紀錄維護","","",-1,-1,0,"lecturerecord.asp?category=C","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學員外語學習講座紀錄","","",-1,-1,0,"lecturerecord.asp?category=L","_self","","","","",6,0,0,"","",7,7]);
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+//stm_aix("p3i0","p0i0",[0,"回診事先通知","","",-1,-1,0,"notice.asp","_self","","","","",6,0,0,"","",7,7]);
+
+<%end if%>
+
+stm_ep();
+<%end if%>
+<%
+if  session("classify")="A" then
+%>
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p0i8","p0i0",[0,"報表統計作業","","",-1,-1,0,"#","_self"]);
+stm_bpx("p3","p1",[1,4,0,0,2,3,6,7]);
+stm_aix("p3i0","p0i0",[0,"學習問卷調查 - 學習策略明細表","","",-1,-1,0,"strategyreport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學習問卷調查 - 學習風格明細表","","",-1,-1,0,"stylereport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"自學療程使用分析表","","",-1,-1,0,"softwarereport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"學制人數統計分析表","","",-1,-1,0,"slevelreport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"系科統計分析表","","",-1,-1,0,"deptreport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"年級統計分析表","","",-1,-1,0,"gradereport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"駐診教師總統計","","",-1,-1,0,"teacherreport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"小老師總統計","","",-1,-1,0,"steacherreport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"使用目的統計表","","",-1,-1,0,"usereport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"每月應回診名單","","",-1,-1,0,"returnreport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"全校學生每週使用人次人數分析表","","",-1,-1,0,"dailyreport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"每月回診比率統計","","",-1,-1,0,"returnratereport.asp","_self","","","","",6,0,0,"","",7,7]);
+
+stm_aix("p3i0","p0i0",[0,"教師/小老師輔導療程紀錄","","",-1,-1,0,"bookmreport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0,"自學軟體/補充教材紀錄","","",-1,-1,0,"booksreport.asp","_self","","","","",6,0,0,"","",7,7]);
+stm_aix("p3i0","p0i0",[0," 處方課程/外語學習講座紀錄","","",-1,-1,0,"booklreport.asp","_self","","","","",6,0,0,"","",7,7]);
+
+ 
+stm_ep();
+<%end if%>
+
+
+
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_aix("p0i12","p0i0",[0,"登出","","",-1,-1,0,"logout.asp","_self"]);
+stm_ai("p0i9",[6,1,"#aca899","",0,0,0]);
+stm_ep();
+stm_em();
+//-->
+</SCRIPT>

@@ -1,0 +1,187 @@
+<STYLE>
+<!--
+	
+	TABLE {
+		FONT-SIZE: 10pt; 
+		LINE-HEIGHT: 16pt; 
+		FONT-FAMILY: Trebuchet MS, Tahoma, Verdana, Arial, 新細明體; 
+		LETTER-SPACING: 0pt
+	}
+	
+	.T1 {
+		FONT-SIZE: 9pt; 
+		LINE-HEIGHT: 16pt; 
+		FONT-FAMILY: Trebuchet MS, Tahoma, Verdana, Arial, 新細明體; 
+		LETTER-SPACING: 0pt
+	}
+	.T2 {
+		FONT-WEIGHT: bold;
+		FONT-SIZE: 18px;
+		COLOR: #bd0000;
+		FONT-FAMILY: Trebuchet MS,Arial, Tahoma, Helvetica, Verdana, 新細明體;
+	}
+	.T3 {
+		FONT-SIZE: 12pt; 
+		FONT-WEIGHT: bold;
+		COLOR:blue; 
+		FONT-FAMILY: Trebuchet MS, Tahoma, Verdana, Arial, 新細明體; 
+
+	}
+	.T5 {
+		FONT-SIZE: 10pt; 
+		COLOR:#CC0000; 
+		FONT-FAMILY: Trebuchet MS, Tahoma, Verdana, Arial, 新細明體; 
+
+	}
+	.T6 {
+		FONT-SIZE: 10pt; 
+		COLOR:#330099; 
+		FONT-FAMILY: Trebuchet MS, Tahoma, Verdana, Arial, 新細明體; 
+
+	}
+	.T7
+	{
+		FONT-WEIGHT: bold;
+		FONT-SIZE: 14px;
+		COLOR: black;
+		FONT-FAMILY: Arial, 'Sans Serif', Tahoma, Helvetica, Verdana
+	}
+	.normal
+	{
+		FONT-WEIGHT: normal;
+		FONT-SIZE: 12px;
+		COLOR: black;
+		FONT-FAMILY: Arial, 'Sans Serif', Tahoma, Helvetica, Verdana
+	}
+	.normalbold
+	{
+		FONT-WEIGHT: bold;
+		FONT-SIZE: 12px;
+		COLOR: black;
+		FONT-FAMILY: Arial, 'Sans Serif', Tahoma, Helvetica, Verdana
+	}
+
+	.inputtext
+	{
+		FONT-WEIGHT: normal;
+		FONT-SIZE: 12px;
+		COLOR: #000000;
+		FONT-FAMILY: Tahoma, Verdana, 'Sans Serif', Helvetica, Arial
+	}
+
+
+	.inputlabel
+	{
+		FONT-WEIGHT: bold;
+		FONT-SIZE: 12px;
+		FONT-FAMILY: 'Sans Serif', Tahoma, Helvetica, Arial, Verdana
+	}
+
+	.inputbutton
+	{
+		FONT-WEIGHT: bold;
+		FONT-SIZE: 12px;
+		FONT-FAMILY: Arial, 'Sans Serif', Tahoma, Helvetica, Verdana
+	}
+	.errmsg
+	{
+		FONT-WEIGHT: normal;
+		FONT-SIZE: 12px;
+		COLOR: red;
+		FONT-FAMILY: Arial, 'Sans Serif', Tahoma, Helvetica, Verdana
+	}
+	.norecord
+	{
+		FONT-WEIGHT: normal;
+		FONT-SIZE: 12px;
+		COLOR: gray;
+		FONT-FAMILY: Arial, 'Sans Serif', Tahoma, Helvetica, Verdana
+	}
+	.tablelist
+	{
+		FONT-WEIGHT: normal;
+		FONT-SIZE: 11px;
+		COLOR: gray;
+		FONT-FAMILY: Arial, 'Sans Serif', Tahoma, Helvetica, Verdana
+	}
+	.ReportTitle {
+		FONT-SIZE: 14pt; 
+		FONT-WEIGHT: bold;
+		COLOR:#000000; 
+		FONT-FAMILY: 新細明體; 
+
+	}
+	.displayarea
+	{
+		BORDER-RIGHT: medium none;
+		BORDER-TOP: medium none;
+		FONT-WEIGHT: normal;
+		FONT-SIZE: 12px;
+		BEHAVIOR: url('/htc/displayarea.htc');
+		BORDER-LEFT: medium none;
+		COLOR: black;
+		BORDER-BOTTOM: medium none;
+		BACKGROUND-COLOR: #FFFFF4;
+		FONT-FAMILY: 'Sans Serif', Tahoma, Helvetica, Arial, Verdana
+	}
+	.showhand
+	{
+		
+		CURSOR: hand;
+		
+	}
+	.font1{
+	font-size:12px; color:#000000; 
+	font-family: Verdana, 新細明體; 
+	border-left: 1px none; border-right: 1px none; 
+	border-top: 1px none; border-bottom: 1px solid #999999; 
+	background-color:#FFFFFF;
+	}
+	A:LINK{TEXT-DECORATION:none;COLOR:#FFFFFF}
+	A:VISITED{COLOR:#FFFFFF;FONT-SIZE: 10pt; TEXT-DECORATION: none;}
+	A:ACTIVE{COLOR:#FFFFFF ;FONT-SIZE: 10pt; TEXT-DECORATION: none;}
+	A:HOVER{COLOR:#FFFFFF;FONT-SIZE: 10pt ; TEXT-DECORATION: none; position:relative;top:1px;left:1px}
+	
+
+
+    BODY {
+      SCROLLBAR-FACE-COLOR: #e1e1e1; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #aaaaaa; SCROLLBAR-3DLIGHT-COLOR: #e1e1e1; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #e1e1e1; SCROLLBAR-DARKSHADOW-COLOR: #d5d5d5
+	}
+
+
+	.tabactive
+	{
+		BORDER-RIGHT: darkgray 1px solid;
+		BORDER-TOP: darkgray 1px solid;
+		FONT-WEIGHT: bold;
+		FONT-SIZE: 11px;
+		BACKGROUND-IMAGE: url(/images/bg-tab-silver.gif);
+		BORDER-LEFT: darkgray 1px solid;
+		CURSOR: hand;
+		BORDER-BOTTOM: darkgray 1px;
+		FONT-FAMILY: 新細明體;
+		LETTER-SPACING: 1px
+	}
+	.tabinactive
+	{
+		BORDER-RIGHT: silver 1px solid;
+		BORDER-TOP: silver 1px solid;
+		FONT-SIZE: 11px;
+		BACKGROUND-IMAGE: url(/images/bg-tab-gray.gif);
+		BORDER-LEFT: silver 1px solid;
+		CURSOR: hand;
+		BORDER-BOTTOM: #b0b0b0 1px;
+		FONT-FAMILY: 新細明體;
+		LETTER-SPACING: 1px;
+		BACKGROUND-COLOR: #FFFFCC
+	}
+	.tabbottom
+	{
+		BORDER-RIGHT: medium none;
+		BORDER-TOP: medium none;
+		BORDER-LEFT: medium none;
+		BORDER-BOTTOM: darkgray 1px solid
+	}
+-->
+
+</STYLE>
